@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Capstone Title Generator</title>
+    <link rel="icon" type="image" href="logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-align" id="intro">
+            <img src="ctpg.png" alt="Capstone Title Generator Logo" class="logo">
+            <h3 id="caps"> Capstone Title/Proposal Generator</h3>
+            <h5 id="caps1">This help students generate creative and relevant capstone project titles <br> quickly and easily.
+                Just enter a few keywords and get the title ideas instantly!</h5>
+            <button id="start" onclick="showForm('Capstone')">Start!</button>
+                <br>
+                <br>
+            <hr>
+            <br>
+        
+            <div class="guide" >
+                <h2>Guide to Build Your Own Capstone Project Title (for BSIT Students):</h><br><br>
+                <h3>Step 1: identify a Real-World Problem or Need</h3>
+                <p>Start by observing issues in your surrounding: school, commmunity, business, or industry.</p>
+                <h4>Ask yourself: </h4>
+                <ol>
+                    <li>What task are still manual or inefficient?</li>
+                    <li>Are there reccuring Problems that can be sollved with technology?</li>
+                    <li>What type of users are struggling (e.g., students, teachers, customers)?</li>
+                </ol>
+                <br>
+                <h4>Examples: </h4>
+                <ol>
+                    <li>Long queues in clinics</li>
+                    <li>Manual inventory systems in small businesses</li>
+                    <li>Poor file management in schools</li>
+                </ol>
+                <br>
+                <h3>Step 2: Choose a field or a Domain</h3>
+                <p>Pick a specific area that alligns with yoour interest or future goal</p>
+                <h4>Common Domains: </h4>
+                <ol>
+                    <li>Education</li>
+                    <li>Healthcare</li>
+                    <li>Finance</li>
+                    <li>E-commerse</li>
+                    <li>Transportation</li>
+                    <li>Agriculture</li>
+                    <li>Goverment Services</li>
+                </ol>
+                <br>
+                <h3>Step 3: Decide on the Type of IT Solutions</h3>
+                <p>Choose what kind of system, app or platform fits the problem.</p>
+                <h4>Popular Solutions: </h4>
+                <ol> 
+                    <li>Information System (e.g., Enrollment System)</li>
+                    <li>Mobile App (e.g., Health Tracker)</li>
+                    <li>Web App (e.g., Online Ordering System)</li>
+                    <li>Automation Tool (e.g., Attendance via RFID)</li>
+                    <li>AI/ML-based System (e.g., Image-based Diagnosis)</li>
+                    <li>IoT-based System (e.g., Smart Irrigation)</li>
+                    <li>Game Development (e.g., Educational Game)</li>
+                </ol>
+                <br>
+                <h3>Step 4: Match with a Technologyy or Programming Language</h3>
+                <p>Choose a tool or language you’re confident in or want to learn.</p>
+                <h4>Example: </h4>
+                <ol>
+                    <li>JavaScript (Web Apps)</li>
+                    <li>Java/Kotlin (Android Apps)</li>
+                    <li>Python (AI/Data Projects)</li>
+                    <li>PHP (Web Systems)</li>
+                    <li>Firebase/Node.js (Real-time Systems)</li>
+                </ol>
+                <br>
+                <h3>Step 5: Draft the Title Using This Format</h3>
+                <p>[Type of System] for [Target Users] to [Purpose or Goal]</p>
+                <h4>Example: </h4>
+                <ol>
+                    <li>“Mobile Application for Senior Citizens to Track Medication Schedules”</li>
+                    <li>“AI-Powered Chatbot for College Admission Inquiries”</li>
+                    <li>“A Web-Based Inventory Management System for Small Retail Stores to Optimize Stock Monitoring”</li>
+                </ol>
+                <br>
+                <h3>Step 6: Validate Your idea</h3>
+                <p>Make sure your title is:</p>
+                <ol>
+                    <li><b>Feasible:</b> Can it be built in your timeline?</li>
+                    <li><b>Original:</b> Search if it’s been done before—add a unique twist.</li>
+                    <li><b>Relevant: </b>Does it solve a real problem?</li>
+                    <li><b>Appropriate:</b> Is it acceptable in your school’s standards?</li>
+                </ol>
+                <br>
+                <h3>Optional: Use Online Tools</h3>
+                <p>Use this Capstone Title Generator to get ideas. Just enter keywords and select a field.
+                    If stuck, use AI-based tools like this app to generate and refine titles based on your inputs.
+                </p>
+                <br>
+                <hr>
+                <br>
+              <div class="last">
+                <h4>How to Use:</h4>
+                <ol>
+                    <li>Enter keywords or a full title in the input field📝.</li>
+                    <li>Select the type of generation you want (Title or Proposal) .</li>
+                    <li>Select a field of study from the dropdown menu.</li>
+                    <li>Click the "Generate" button to get your title or proposal.</li>
+                    <li>You can also delete, copy, or download the generated titles.</li>
+                </ol>
+                
+                <h4>📌Note:</h4>
+                <p>Make sure to provide relevant keywords for better results.</p>
+                <p>Generated titles are suggestions and should be reviewed before use.</p>
+                <h4>⚠️Disclaimer:</h4>
+                <p>This tool is for educational purposes only. The generated titles may not be suitable for all projects.</p>
+                <p>Always consult with your advisor or mentor before finalizing your project title.</p>     
+                <h4>📱Contact Us:</h4>
+                <p>If you have any questions or feedback, feel free to reach out to us at:</p>
+                <p>Email: <a href="mailto: carlchristianbascoortego@gmail.com">carlchristianbascoortego@gmail.com</a><br>
+                    <a href="mailto: janjanagbayni18o@gmail.com">janjanagbayani18@gmail.com</a>
+                </p>
+                    </div>
+                </div>
+            </div>
+            
+        <div class="form-box" id="Capstone" style="display: none;">
+            <div class="container">
+                <div class="form-content">
+                    <img src="ctpg.png" alt="Capstone Title Generator Logo" class="logo1">
+                    <h3>Generate Here!</h3>
+                    <input type="text" id="topic" class="text" placeholder="Input keywords or a full title" required>
+
+                    <select id="generate" name="generate">
+                        <option>--Choose What to Generate--</option>
+                        <option value="Generate Title">Generate Title</option>
+                        <option value="Generate Proposal">Generate Proposal</option>
+                    </select>
+                    
+                    <select id="fields" name="fields">
+                        <option>--Select a Field--</option>
+                        <option value="None">None</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Cybersecurity">Cybersecurity</option>
+                        <option value="Artificial Intelligence & Machine Learning">Artificial Intelligence & Machine Learning</option>
+                        <option value="Data Science & Analytics">Data Science & Analytics</option>
+                        <option value="Robotics & Automation">Robotics & Automation</option>
+                        <option value="Renewable Energy & Sustainability">Renewable Energy & Sustainability</option>
+                        <option value="Internet of Things (IoT)">Internet of Things (IoT)</option>
+                        <option value="Cloud Computing">Cloud Computing</option>
+                        <option value="Human-Computer Interaction">Human-Computer Interaction</option>
+                        <option value="Game Development">Game Development</option>
+                        <option value="Augmented & Virtual Reality">Augmented & Virtual Reality</option>
+                        <option value="Software Engineering">Software Engineering</option>
+                        <option value="Civil & Structural Engineering">Civil & Structural Engineering</option>
+                        <option value="Aerospace & Aviation">Aerospace & Aviation</option>
+                        <option value="Biomedical Engineering">Biomedical Engineering</option>
+                        <option value="Psychology & Behavioral Science">Psychology & Behavioral Science</option>
+                    </select>
+                   
+                    <button id="submit" onclick="generateTitle(), showForm('title-box')" name="submit">
+                        <img src="generate.png" alt="Generate Icon">
+                        Generate
+                    </button>
+
+                    <div class="button-group">
+                        <button id="delete" onclick="deleteTitles();">
+                            <img src="delete.png" alt="Delete Icon"> 
+                            Delete
+                        </button>
+                        <button id="copy" onclick="copyToClipboard();">
+                            <img src="copy.png" alt="Copy Icon"> 
+                            Copy
+                        </button>
+                        <button id="download" onclick="downloadTitles();">
+                            <img src="downloads.png" alt="Download Icon">
+                            Download
+                        </button>   
+                    </div>
+                </div>
+            </div>
+
+                         <footer>
+                             <br>
+                                <p>&copy; 2025 Capstone Title Generator</p>
+                                <p>Developed by: Carl Christian & John Benedict</p>
+                                <p>Powered by: <a href="https://gemini.google.com/app">Gemini</a></p>
+                                <br>
+                        </footer>
+            
+        </div>
+
+        <div class="result-box" id="title-box" style="display: none;">
+            <div class="title-box">
+                <img src="ctpg.png" alt="Capstone Title Generator Logo" class="logo1">
+                <h3>Your Capstone Title/Proposal are: </h3>
+                <div class="loader" id="loader" style="display: none;"></div>
+                <ol id="title-list"></ol>
+                <span id="generated-titles"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script>
+        // Disable right-click
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Disable specific keyboard shortcuts
+        document.addEventListener('keydown', function (e) {
+            // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+            if (e.key === 'F12' || 
+                (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || 
+                (e.ctrlKey && e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

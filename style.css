@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffffff;
+    color: #000000;
+    padding: 20px;
+}
+
+.container {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    text-align: left;
+}
+
+.form-box{
+    width: 200;
+    max-width: 450px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(123, 0, 255);
+    display: none;
+    margin-bottom: 50px;
+    flex: 1;
+    text-align: left;
+}
+
+.result-box {
+    width: 200;
+    max-width: 450px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(123, 0, 255);
+    display: none;
+    margin-bottom: 50px;
+    flex: 1;
+    text-align: left;
+}
+
+
+#Capstone {
+    flex: 0 1 450px;
+}
+
+.left-align {
+    text-align: left;
+    flex: 1;
+    
+}
+
+
+#title {
+    flex: 90%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #3529df;
+    margin-bottom: 20px;    
+}
+
+p {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+h3  {
+    font-size: 25px;
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+h5 {
+    font-size: 15px;
+    font-family: poppins;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #ffffff;  
+}
+
+#caps  {
+    font-size: 35px;
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#caps1 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+#start {
+    padding: 12px;
+    width: 33%;
+    border: none;
+    border-radius: 80px;
+    font: roboto;
+    font-weight: bold ;
+    font-size: 25px;
+    cursor: pointer;
+    background: #6f00ff;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+
+#submit {
+    width: 100%;
+    padding: 12px;
+    background: #7494ec;
+    border: none;
+    border-radius: 80px;
+    outline: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit:disabled {
+    background: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+#submit img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+#delete {
+    padding: 12px;
+    width: 33%;
+    border: none;
+    border-radius: 80px;
+    font: roboto;
+    font-weight: bold ;
+    font-size: 17px;
+    cursor: pointer;
+    background: #ec4051;
+    color: #000000;
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#delete img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+#copy {
+    padding: 12px;
+    width: 33%;
+    border: none;
+    border-radius: 80px;
+    font: roboto;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    background: #7494ec;
+    color: #ffffff;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#copy img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+#download {
+    padding: 12px;
+    width: 33%;
+    border: none;
+    border-radius: 80px;
+    font: roboto;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    background: #28a745;
+    color: #ffffff;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit:hover {
+    background: #0044ff;
+    color: #ffffff;
+}
+
+.logo {
+    display: block;
+    margin: 0px auto 20px auto; /* Center the logo and add bottom margin */
+    width: 230px; /* Set the same width for both logos */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.logo1 {
+    display: block;
+    margin: 0px auto 20px auto; /* Center the logo and add bottom margin */
+    width: 130px; /* Set the same width for both logos */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+#download img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+#delete:hover {
+    background: #ff0019;
+    color: #fff;
+}
+
+#copy:hover {
+    background: #4800ff;
+    color: #ffffff;
+}
+
+button:hover {
+    background: #4800ff;
+}
+
+#download:hover {
+    background: #00ff37;
+    color: #ffffff;
+}
+
+footer p{
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    display: block;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 50%;
+    border: 8px solid lightblue;
+    border-right-color: rgb(246, 255, 0);
+    animation: l2 1s infinite linear;
+  }
+  @keyframes l2 {to{transform: rotate(1turn)}
+
+}
+    
+
+    body {
+        font-family: "Open Sans", -apple-system, BlinkMacSystemFont, 
+        "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
+        "Helvetica Neue", Helvetica, Arial, sans-serif; 
+      }
+
+      #title-box {
+        text-align: left;
+        width: 100%;
+      }
+
+      #generated-title {
+        text-align: left;
+       justify-content: left;
+       width: 100%;
+       margin: 0 auto;
+    }
+      
+
+      #generated-title ol {
+        padding-left: 0px; /* Indent the list */
+        text-align: left;
+        width: 100%;
+    }
+    
+    #generated-title ol li {
+        margin-bottom: 10px; /* Space between items */
+        line-height: 1.5; /* Better readability */
+        text-align: left;
+        width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column; /* Stack form boxes vertically on mobile */
+        }
+    }
+
+
+
+
+    
+.guide {
+    background-color: #f9f9f9; /* Light background color */
+    border: 2px solid #ddd; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add spacing inside the box */
+    box-shadow: 0 4px 8px rgba(244, 8, 8, 0.1); /* Add a shadow for depth */
+    margin: 20px 0; /* Add spacing above and below */
+    font-family: 'Poppins', sans-serif; /* Use a clean font */
+    color: #333; /* Text color */
+}
+
+.guide h2 {
+    color: #6f00ff; /* Highlighted color for headings */
+    font-size: 24px; /* Larger font size for headings */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.guide h3, .guide h4 {
+    color: #444; /* Slightly darker color for subheadings */
+    margin-bottom: 10px; /* Space below subheadings */
+}
+
+.guide h3 {
+    color: #000000; /* Set the color to black */
+    margin-bottom: 10px; /* Space below subheadings */
+}
+
+.guide p {
+    font-weight: bold; /* Keep the text bold */
+    font-size: 18px; /* Maintain the increased font size */
+    line-height: 1.6; /* Maintain readability */
+    margin-bottom: 15px; /* Space below paragraphs */
+    text-align: left; /* Align text to the left */
+}
+
+.guide ol {
+    padding-left: 20px; /* Indent the list */
+    margin-bottom: 15px; /* Space below the list */
+}
+
+.guide ol li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.guide a {
+    color: #6f00ff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.guide a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Style for all ordered and unordered lists */
+.guide ol, .guide ul {
+    font-size: 18px; /* Increase font size for readability */
+    line-height: 1.8; /* Add spacing between lines */
+    margin-bottom: 15px; /* Add space below the list */
+    padding-left: 20px; /* Indent the list */
+}
+
+/* Style for list items */
+.guide ol li, .guide ul li {
+    margin-bottom: 10px; /* Add space between list items */
+}
+
+/* Style for all h4 tags */
+.guide h4 {
+    font-size: 20px; /* Increase font size for readability */
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 10px; /* Add space below the heading */
+    color: #444; /* Slightly darker color for better contrast */
+}
+
+
+.last p {
+    font-weight: normal; /* Remove bold styling */
+    font-size: 16px; /* Optional: Adjust the font size if needed */
+    line-height: 1.5; /* Optional: Improve readability */
+    text-align: left; /* Ensure text is aligned to the left */
+}
